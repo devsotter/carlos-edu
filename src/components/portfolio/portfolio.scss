@@ -1,0 +1,135 @@
+@import "../../global.scss";
+
+.tudo {
+  h1 {
+    font-size: 50px;
+    text-align: center;
+
+    @include mobile {
+      font-size: 30px;
+    }
+  }
+}
+.portfolio {
+  background-color: #ffffff;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  .container {
+    margin-top: 10px;
+    max-width: 60%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+
+    @include mobile {
+      max-width: 100%;
+    }
+
+    .item {
+      width: 220px;
+      height: 150px;
+      border-radius: 20px;
+      border: 1px solid #ffffff;
+      margin: 10px 20px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: white;
+
+      cursor: pointer;
+      transition: 0.1s;
+
+      @include mobile {
+        width: 100%;
+        height: 100%;
+      }
+      &:hover {
+        transform: scale(1.05);
+      }
+
+      img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        z-index: 1;
+      }
+    }
+  }
+}
+
+.portfolio {
+  .modal {
+    // Estilos para o modal
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.8);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 9999;
+
+    .modal-content {
+      // Estilos para o conteúdo do modal
+      position: relative;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      width: 80%;
+
+      img {
+        border-radius: 5px;
+        max-width: 100%;
+        width: 50%;
+        height: 50%;
+
+        @include mobile {
+          width: 100%;
+        }
+      }
+    }
+
+    .close {
+      z-index: 999;
+      position: absolute;
+      top: 100px;
+      right: 30px;
+      background-color: rgba(255, 0, 0, 0.792);
+      border: none;
+      color: white;
+      padding: 10px;
+      border-radius: 4px;
+      cursor: pointer;
+    }
+
+    .slider-controls {
+      // Estilos para os controles do slider
+      display: flex;
+      justify-content: space-between;
+      width: 100%;
+      position: absolute;
+
+      button {
+        // Estilos para os botões de próxima e anterior
+        margin: 0 10px;
+        background-color: transparent;
+        border: none;
+        cursor: pointer;
+
+        &:nth-child(1) {
+          transform: rotate(-180deg);
+        }
+
+        img {
+          width: 50px;
+          height: 50px;
+        }
+      }
+    }
+  }
+}
