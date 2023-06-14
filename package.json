@@ -1,5 +1,4 @@
 {
-   "homepage": "https://devsotter.github.io/carlos-edu",
   "name": "portfolio-carlos",
   "version": "0.1.0",
   "private": true,
@@ -16,9 +15,7 @@
     "react-modal": "^3.16.1",
     "react-scripts": "5.0.1",
     "scss": "^0.2.4",
-    "web-vitals": "^2.1.4",
-    "predeploy": "npm run build",
-  "deploy": "gh-pages -d dist"
+    "web-vitals": "^2.1.4"
 
   },
   "scripts": {
