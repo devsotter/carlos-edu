@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import Modal from "react-modal";
-import "./works.scss";
+import "./work.scss";
 
 export default function Works() {
   const [currentSlide, setCurrentSlide] = useState(0);
