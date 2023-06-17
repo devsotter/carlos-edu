@@ -5,6 +5,7 @@
   display: flex;
   justify-content: center;
   align-items: center;
+  flex-direction: column;
 }
 
 .avatar {
@@ -32,6 +33,7 @@
     display: flex;
 
     svg {
+      width: 40px;
       fill: white;
       transition: 0.3s;
     }
@@ -62,33 +64,15 @@
     color: $secColor;
   }
 
-  .area-arrow {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    align-self: center;
-    width: 100px;
-    height: 100px;
-    margin: 0 auto;
-    transition: 0.5s;
+}
 
-    &:hover {
-      transform: translatey(8px);
-    }
-  }
+.arrow {
+  transform: rotate(0.5turn) translate(-50px, -50%);
+  transition: 0.3s;
+}
 
-  .arrow {
-    margin: 10px;
-    transform: rotate(0.5turn) translate(-50px, -50%);
-
-    &:hover {
-      fill: $secColor;
-    }
-
-    @include mobile {
-      display: none;
-    }
-  }
+.arrow:hover {
+  fill: $secColor;
 }
 
 .wrapper {

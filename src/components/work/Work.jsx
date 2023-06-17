@@ -22,11 +22,11 @@ export default function Works() {
     },
     {
       id: "2",
-      icon: "",
+      icon: "./assets/steam.svg",
       link: "",
       link2: "",
       more: "",
-      icon2: "",
+      icon2: "./assets/twitter.svg",
       title: "Pesadelum",
       desc: "I made some pixelated animated characters in 2022 to early 2023 for Pesadelum",
       job: ["./assets/work2-1.gif", "./assets/work2-2.gif", "./assets/work2-3.gif", "./assets/work2-4.gif", "./assets/work2-5.gif", "./assets/work2-6.gif", "./assets/work2-7.gif", "./assets/work2-8.jpg",],
@@ -61,10 +61,10 @@ export default function Works() {
                 <div className="leftContainer">
                   <div className="imgContainer">
                     <a href={d.link} target="_blank">
-                      <img src={d.icon} alt="icones rede social" />
+                      <img src={d.icon} alt="icone de rede social" />
                     </a>
                     <a href={d.link2} target="_blank">
-                      <img src={d.icon2} alt="icones rede social" />
+                      <img src={d.icon2} alt="icone de rede social" />
                     </a>
                   </div>
                   <h2>{d.title}</h2>

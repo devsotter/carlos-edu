@@ -90,7 +90,7 @@
 
 
         @include mobile {
-          width: 100%;
+          width: 60;
         }
       }
     }
@@ -109,14 +109,12 @@
     }
 
     .slider-controls {
-      // Estilos para os controles do slider
       display: flex;
       justify-content: space-between;
       width: 100%;
       position: absolute;
 
       button {
-        // Estilos para os botões de próxima e anterior
         margin: 0 10px;
         background-color: transparent;
         border: none;
