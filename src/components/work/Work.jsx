@@ -50,9 +50,11 @@ export default function Works() {
     setSelectedImages([]);
   };
 
+  
   return (
     <div className="works" id="works">
-      <h1>Works</h1>
+      <div className="container-work">
+        <h1>Works</h1>
       <div className="slider" style={{ transform: `translateX(-${currentSlide * 100}vw)` }}>
         {data.map((d, index) => (
           <div className="container" key={d.id}>
@@ -109,6 +111,7 @@ export default function Works() {
         alt="seta para direita"
         onClick={() => handleClick()}
       />
+      </div>
     </div>
   );
 }

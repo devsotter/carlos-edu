@@ -6,6 +6,9 @@
   justify-content: center;
   align-items: center;
   flex-direction: column;
+
+
+  
 }
 
 .avatar {
@@ -26,6 +29,8 @@
   font-size: 30px;
   margin: 20px;
   color: white;
+
+  
 
   .icones-redes {
     gap: 20px;
@@ -49,19 +54,30 @@
 
   p {
     padding: 10px 0;
-  }
 
+
+    
   @include mobile {
     font-size: 20px;
   }
+  }
+
 
   h1 {
     color: $secColor;
+    
   }
 
   h3 {
     font-size: 20px;
     color: $secColor;
+
+
+    @include mobile {
+      font-size: 15px;
+    }
+  
+  
   }
 
 }
