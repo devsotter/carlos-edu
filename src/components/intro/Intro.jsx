@@ -23,7 +23,9 @@ export default function Intro() {
            
           </div>
      
-            <img className="avatar" src="./assets/avatar.png" alt="pixel arte" />
+     <div className="naosei">
+     <img className="avatar" src="./assets/avatar.png" alt="pixel arte" />
+     </div>
        
 
 
