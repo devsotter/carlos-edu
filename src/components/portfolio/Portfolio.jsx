@@ -54,10 +54,9 @@ export default function Portfolio() {
 
   return (
     <div className="tudo">
-      <h1>Portfolio</h1>
       <div className="portfolio" id="portfolio">
-
         <div className="nav-port">
+          <h1>Portfolio</h1>
           <ul>
             {list.map((item) => (
               <PortfolioList

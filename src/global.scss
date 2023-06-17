@@ -1,8 +1,8 @@
 $mainColor: #366e62;
 $secColor: #ffb44c;
 
-$width: 1085px;
-$width2: 600px;
+$width: 1080px;
+$width2: 500px;
 
 @mixin mobile {
   @media (max-width: #{$width}) {
