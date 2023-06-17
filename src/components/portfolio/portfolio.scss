@@ -83,10 +83,11 @@
       width: 80%;
 
       img {
+        margin: 0;
         border-radius: 5px;
         max-width: 100%;
         width: 50%;
-        height: 50%;
+
 
         @include mobile {
           width: 100%;

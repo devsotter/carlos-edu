@@ -75,7 +75,7 @@ export default function Portfolio() {
             <div className="item">
               <img
                 src={d.img}
-                alt=""
+                alt="imagem"
                 onClick={() => openModal(index)}
               />
               <h3>{d.title}</h3>
@@ -88,12 +88,12 @@ export default function Portfolio() {
               Close
             </span>
             <div className="modal-content">
-              <img src={data[currentImageIndex].img} alt="" />
+              <img src={data[currentImageIndex].img} alt="imagem" />
               <h3>{data[currentImageIndex].title}</h3>
             </div>
             <div className="slider-controls">
-              <button onClick={prevSlide}><img src="./assets/arrow.png" alt="" /></button>
-              <button onClick={nextSlide}><img src="./assets/arrow.png" alt="" /></button>
+              <button onClick={prevSlide}><img src="./assets/arrow.png" alt="svg seta para direita" /></button>
+              <button onClick={nextSlide}><img src="./assets/arrow.png" alt="svg seta para direita" /></button>
             </div>
           </div>
         )}

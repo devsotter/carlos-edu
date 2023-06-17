@@ -3,15 +3,13 @@
 .intro {
   background-color: $mainColor;
   display: flex;
- justify-content: center;
- align-items: center;
-
-
-
+  justify-content: center;
+  align-items: center;
 }
-.avatar{
+
+.avatar {
   z-index: 1;
-margin: 20px;
+  margin: 20px;
   width: 300px;
   max-width: 100%;
   position: relative;
@@ -19,10 +17,7 @@ margin: 20px;
   @include mobile {
     display: none;
   }
-
-
 }
-
 
 .texto {
   line-height: 1.1;
@@ -31,85 +26,81 @@ margin: 20px;
   margin: 20px;
   color: white;
 
-
-  .icones-redes{
+  .icones-redes {
     gap: 20px;
     margin: 10px 0;
     display: flex;
 
-
-
     svg {
       fill: white;
       transition: 0.3s;
-      
-
     }
-    a{
+
+    a {
       padding: 20px 10px;
+
       &:hover svg {
-        fill: $secColor ;
-  
+        fill: $secColor;
       }
     }
   }
-
 
   p {
     padding: 10px 0;
   }
 
-  
-
   @include mobile {
-   font-size: 20px;
+    font-size: 20px;
   }
 
   h1 {
-    color: $secColor;    
+    color: $secColor;
   }
 
   h3 {
     font-size: 20px;
-    color: $secColor;    
-    
+    color: $secColor;
   }
 
-  a{
+  .area-arrow {
     display: flex;
     justify-content: center;
     align-items: center;
     align-self: center;
-  }
-  .arrow{
-    margin: 10px;
-    width: 300px;
-    height: 150px;
-    fill: rgb(255, 255, 255);
+    width: 100px;
+    height: 100px;
+    margin: 0 auto;
     transition: 0.5s;
-    
+
+    &:hover {
+      transform: translatey(8px);
+    }
+  }
+
+  .arrow {
+    margin: 10px;
+    transform: rotate(0.5turn) translate(-50px, -50%);
+
+    &:hover {
+      fill: $secColor;
+    }
 
     @include mobile {
       display: none;
     }
-
-    &:hover {
-      transform: translateY(10px);
-    }
   }
 }
+
 .wrapper {
   flex-wrap: wrap;
   display: flex;
-justify-content: center;
+  justify-content: center;
   align-items: center;
-
-
 }
 
 .naosei {
-
   position: relative;
+
   &::after {
     content: "";
     width: 300px;
@@ -118,9 +109,7 @@ justify-content: center;
     border-radius: 50%;
     display: block;
     position: absolute;
-top: 0;
-right: 0;
-    
-
+    top: 0;
+    right: 0;
   }
 }

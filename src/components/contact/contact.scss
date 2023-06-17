@@ -22,21 +22,27 @@ h1 {
 
 .con {
   display: flex;
+  justify-content: center;
+  align-items: center;
 
 }
 .thank {
-  flex-wrap: wrap;
+  flex-wrap: wrap-reverse;
   display: flex;
   justify-content: center;
   align-items: center;
  
+  @include mobile {
+    text-align: center;
+  }
 
   .shake {
     width: 600px;
     height: 600px;
 
     @include mobile {
-display: none;
+width: 300px;
+height: 300px;
     }
   }
 
@@ -59,4 +65,13 @@ display: none;
   font-size: 20px;
   color: $secColor;
   }
+}
+
+
+.box-contato {
+display: flex;
+
+@include mobile {
+  height: 600px;
+}
 }
