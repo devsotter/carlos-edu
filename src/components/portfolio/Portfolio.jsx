@@ -82,7 +82,7 @@ export default function Portfolio() {
           ))}
         </div>
         {showModal && (
-          <div className="modal">
+          <div className="modal-slide">
             <button className="close" onClick={closeModal}>
               Close
             </button>
