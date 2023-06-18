@@ -83,9 +83,9 @@ export default function Portfolio() {
         </div>
         {showModal && (
           <div className="modal">
-            <span className="close" onClick={closeModal}>
+            <button className="close" onClick={closeModal}>
               Close
-            </span>
+            </button>
             <div className="modal-content">
               <img src={data[currentImageIndex].img} alt="imagem" />
               <h3>{data[currentImageIndex].title}</h3>
