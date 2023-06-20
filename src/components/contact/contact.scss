@@ -7,6 +7,11 @@
     text-align: center;
     margin: 20px 0;
     font-size: 50px;
+
+
+    @include mobile {
+      font-size: 30px;
+    }
   }
 }
 
@@ -32,6 +37,10 @@ width: 350px;
 
   h2 {
     font-size: 30px ;
+
+    @include mobile {
+      font-size: 20px;
+    }
   }
 
   a {
