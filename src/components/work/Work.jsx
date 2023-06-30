@@ -56,7 +56,7 @@ export default function Works() {
 
   const openModal = (work) => {
     setCurrentWork(work);
-    setCurrentImage(0); // Reset the current image index to the first image
+    setCurrentImage(0); 
     setShowModal(true);
   };
 
@@ -78,8 +78,8 @@ export default function Works() {
 
   return (
     <div className="works" id="works">
+       <h1>Works</h1>
       <div className="container-work">
-        <h1>Works</h1>
         <div className="slider" style={{ transform: `translateX(-${currentSlide * 100}vw)` }}>
           {data.map((d) => (
             <div className="container" key={d.id}>

@@ -13,7 +13,8 @@ export default function Contact() {
 
         </div>
       </div>
-      <div className="copy"><p>Feito à base de cafeína por <a href="https://github.com/devsotter" target="_blank" rel="noopener noreferrer">Nicholas Sotter</a>.</p></div>
+      <div className="copy"><p> Feito sob o efeito da cafeína por
+         <a href="https://github.com/devsotter" target="_blank" rel="noopener noreferrer">Nicholas Sotter</a>.</p></div>
     </div>
   );
 }

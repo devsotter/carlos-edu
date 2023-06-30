@@ -20,23 +20,30 @@ export default function Intro() {
               <a href="https://www.instagram.com/4piih/" target="_blank"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 30 30" width="50px" height="50px">    <path d="M 9.9980469 3 C 6.1390469 3 3 6.1419531 3 10.001953 L 3 20.001953 C 3 23.860953 6.1419531 27 10.001953 27 L 20.001953 27 C 23.860953 27 27 23.858047 27 19.998047 L 27 9.9980469 C 27 6.1390469 23.858047 3 19.998047 3 L 9.9980469 3 z M 22 7 C 22.552 7 23 7.448 23 8 C 23 8.552 22.552 9 22 9 C 21.448 9 21 8.552 21 8 C 21 7.448 21.448 7 22 7 z M 15 9 C 18.309 9 21 11.691 21 15 C 21 18.309 18.309 21 15 21 C 11.691 21 9 18.309 9 15 C 9 11.691 11.691 9 15 9 z M 15 11 A 4 4 0 0 0 11 15 A 4 4 0 0 0 15 19 A 4 4 0 0 0 19 15 A 4 4 0 0 0 15 11 z" /></svg></a>
               <a href="https://www.twitch.tv/4piih" target="_blank"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="50px" fill="#fff" height="50px"><path d="M 5.3632812 2 L 2 6.6367188 L 2 20 L 7 20 L 7 23 L 10 23 L 13 20 L 17 20 L 22 15 L 22 2 L 5.3632812 2 z M 6 4 L 20 4 L 20 13 L 17 16 L 12 16 L 9 19 L 9 16 L 6 16 L 6 4 z M 11 7 L 11 12 L 13 12 L 13 7 L 11 7 z M 16 7 L 16 12 L 18 12 L 18 7 L 16 7 z" /></svg></a>
             </div>
-           
+
           </div>
-     
-     <div className="naosei">
-     <img className="avatar" src="./assets/avatar.png" alt="pixel arte" />
-     </div>
-       
+
+          <div className="naosei">
+            <img className="avatar" src="./assets/avatar.png" alt="pixel arte" />
+          </div>
+
 
 
         </div>
 
       </div>
- 
-         <a className="area-arrow" href="#portfolio">
-              <svg xmlns="http://www.w3.org/2000/svg" width="60" height="60" viewBox="0 0 50 25"><path className="arrow" id="Polígono_8" data-name="Polígono 8" d="M22.172,2.828a4,4,0,0,1,5.657,0L43.172,18.172A4,4,0,0,1,40.343,25H9.657a4,4,0,0,1-2.828-6.828Z" fill="#f0f0f0" /></svg>
-            </a>
-            
+
+
+      <a className="area-arrow" href="#portfolio">
+
+        <div className="drop">
+          <svg xmlns="http://www.w3.org/2000/svg" width="60" height="60" viewBox="0 0 50 25"><path className="arrow" id="Polígono_8" data-name="Polígono 8" d="M22.172,2.828a4,4,0,0,1,5.657,0L43.172,18.172A4,4,0,0,1,40.343,25H9.657a4,4,0,0,1-2.828-6.828Z" fill="#f0f0f0" /></svg>
+
+        </div>
+
+      </a>
+
+
     </div>
   );
 }

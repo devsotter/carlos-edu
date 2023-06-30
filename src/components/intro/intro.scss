@@ -7,13 +7,8 @@
   align-items: center;
   flex-direction: column;
   height: 100vh;
-
-
-  
 }
 .naosei {
-
-
   @include mobile {
     display: none;
   }
@@ -23,9 +18,7 @@
     width: 300px;
     max-width: 100%;
     position: relative;
-  
   }
-  
 }
 
 .texto {
@@ -34,8 +27,6 @@
   font-size: 30px;
   margin: 20px;
   color: white;
-
-  
 
   .icones-redes {
     gap: 20px;
@@ -60,33 +51,40 @@
   p {
     padding: 10px 0;
 
-
-    
-  @include mobile {
-    font-size: 20px;
+    @include mobile {
+      font-size: 20px;
+    }
   }
-  }
-
 
   h1 {
     color: $secColor;
-    
   }
 
   h3 {
     font-size: 20px;
     color: $secColor;
 
-
     @include mobile {
       font-size: 15px;
     }
-  
-  
   }
-
 }
 
+.area-arrow {
+  padding: 15px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.drop {
+  animation: drop 1s infinite alternate ease-in;
+
+  @keyframes drop {
+    100% {
+      transform: translatey(20px);
+    }
+  }
+}
 .arrow {
   transform: rotate(0.5turn) translate(-50px, -50%);
   transition: 0.3s;
