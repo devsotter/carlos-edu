@@ -204,6 +204,7 @@ align-items: center;
       width: 500px;
       margin: 20px;
       border-radius: 10px;
+      box-shadow: 4px 4px 10px black;
 
 @include mobile {
   width: 300px;
