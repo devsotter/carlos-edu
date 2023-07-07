@@ -46,6 +46,38 @@ export default function Works() {
       ],
       img: "./assets/job2.jpg",
     },
+    {
+      id: "3",
+      icon: "./assets/steam.svg",
+      link: "",
+      link2: " ",
+      more: "",
+      icon2: "./assets/twitter.svg",
+      title: "WestHalla",
+      desc: "I worked with small sprites and some 16px weapons in May 2023",
+      job: [
+        "./assets/sprite1.png",
+        "./assets/sprite2.png",
+        "./assets/sprite3.png",
+        "./assets/sprite4.png",
+        "./assets/sprite5.png",
+        "./assets/sprite6.png",
+        "./assets/sprite7.png",
+        "./assets/sprite8.png",
+        "./assets/sprite9.png",
+        "./assets/sprite10.png",
+        "./assets/sprite11.png",
+        "./assets/sprite12.png",
+        "./assets/sprite13.png",
+        "./assets/sprite14.png",
+        "./assets/sprite15.png",
+        "./assets/sprite16.png",
+        "./assets/sprite17.png",
+        "./assets/sprite18.png",
+   
+      ],
+      img: "./assets/header.png",
+    },
   ];
 
   const handleClick = (way) => {
@@ -123,27 +155,28 @@ export default function Works() {
           onClick={() => handleClick()}
         />
       </div>
-      {showModal && (
-        <div className="modal">
-          <span className="close" onClick={closeModal}>
-            &times;
-          </span>
-          <div className="modal-content">
-            <img src={currentWork.job[currentImage]} alt="imagem do trabalho" />
-          </div>
-          <button className="close-button" onClick={closeModal}>
-            Close
-          </button>
-          <div className="modal-controls">
-            <button className="prev-button" onClick={previousImage}>
-            <img src="./assets/arrow.png" alt="svg seta para direita" />
-            </button>
-            <button className="next-button" onClick={nextImage}>
-            <img src="./assets/arrow.png" alt="svg seta para direita" />
-            </button>
-          </div>
-        </div>
-      )}
+ {showModal && (
+  <div className="modal">
+    <span className="close" onClick={closeModal}>
+      &times;
+    </span>
+    <div className="modal-content">
+    <div className="image-indicator">{`${currentImage + 1}/${currentWork.job.length}`}</div>
+      <img src={currentWork.job[currentImage]} alt="imagem do trabalho" />
+    </div>
+    <button className="close-button" onClick={closeModal}>
+      Close
+    </button>
+    <div className="modal-controls">
+      <button className="prev-button" onClick={previousImage}>
+        <img src="./assets/arrow.png" alt="svg seta para direita" />
+      </button>
+      <button className="next-button" onClick={nextImage}>
+        <img src="./assets/arrow.png" alt="svg seta para direita" />
+      </button>
+    </div>
+  </div>
+)}
     </div>
   );
 }
