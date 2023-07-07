@@ -14,7 +14,7 @@ export default function Works() {
       link: "https://store.steampowered.com/app/1599860/Vanaris_Tactics/",
       link2: "https://twitter.com/VanarisTactics",
       icon2: "./assets/twitter.svg",
-      title: "Vanaris Tactics",
+      title: " Pesadelum",
       more: "Job1",
       desc: "I made some characters and power ups for Vanaris Tactics in 2021.",
       job: [
@@ -29,10 +29,10 @@ export default function Works() {
       id: "2",
       icon: "./assets/steam.svg",
       link: "",
-      link2: "",
+      link2: "https://twitter.com/Corvo_z7",
       more: "",
       icon2: "./assets/twitter.svg",
-      title: "Pesadelum",
+      title: "Vanaris Tactics",
       desc: "I made some pixelated animated characters in 2022 to early 2023 for Pesadelum",
       job: [
         "./assets/work2-1.gif",
