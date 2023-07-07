@@ -11,12 +11,12 @@ export default function Works() {
     {
       id: "1",
       icon: "./assets/steam.svg",
-      link: "https://store.steampowered.com/app/1599860/Vanaris_Tactics/",
-      link2: "https://twitter.com/VanarisTactics",
+      link: "https://store.steampowered.com/?l=brazilian",
+      link2: " https://twitter.com/Corvo_z7",
       icon2: "./assets/twitter.svg",
       title: " Pesadelum",
       more: "Job1",
-      desc: "I made some characters and power ups for Vanaris Tactics in 2021.",
+      desc: "I made some pixelated animated characters in 2022 to early 2023 for Pesadelum",
       job: [
         "./assets/work-1.gif",
         "/assets/work-2.gif",
@@ -28,12 +28,12 @@ export default function Works() {
     {
       id: "2",
       icon: "./assets/steam.svg",
-      link: "",
-      link2: "https://twitter.com/Corvo_z7",
+      link: "https://store.steampowered.com/app/1599860/Vanaris_Tactics/",
+      link2: "https://twitter.com/VanarisTactics ",
       more: "",
       icon2: "./assets/twitter.svg",
       title: "Vanaris Tactics",
-      desc: "I made some pixelated animated characters in 2022 to early 2023 for Pesadelum",
+      desc: "I made some characters and power ups for Vanaris Tactics in 2021.",
       job: [
         "./assets/work2-1.gif",
         "./assets/work2-2.gif",
