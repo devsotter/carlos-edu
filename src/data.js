@@ -72,6 +72,18 @@ export const pixelPortfolio = [
       "./assets/pixel-12.gif",
 
   },
+  {
+    id: 1,
+    img:
+      "./assets/pixel-13.gif",
+
+  },
+  {
+    id: 1,
+    img:
+      "./assets/pixel-15.png",
+
+  },
 
 
 
