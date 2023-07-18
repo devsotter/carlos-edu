@@ -76,7 +76,7 @@ export default function Portfolio() {
         </div>
         <div className="container">
           {data.slice(0, showMore ? data.length : 12).map((d, index) => (
-            <div className="item" key={index}>
+            <div className={`item${showMore ? " show" : ""}`} key={index}>
               <img
                 src={d.img}
                 alt="imagem"
@@ -94,7 +94,21 @@ export default function Portfolio() {
         )}
         {showModal && (
           <div className="modal-slide">
-            {/* ... */}
+            <button className="close" onClick={closeModal}>
+              Close
+            </button>
+            <div className="modal-content">
+              <img src={data[currentImageIndex].img} alt="imagem" />
+              <h3>{data[currentImageIndex].title}</h3>
+            </div>
+            <div className="slider-controls">
+              <button onClick={prevSlide}>
+                <img src="./assets/arrow.png" alt="svg seta para esquerda" />
+              </button>
+              <button onClick={nextSlide}>
+                <img src="./assets/arrow.png" alt="svg seta para direita" />
+              </button>
+            </div>
           </div>
         )}
       </div>
