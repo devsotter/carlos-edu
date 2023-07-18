@@ -8,6 +8,7 @@ export default function Portfolio() {
   const [data, setData] = useState([]);
   const [showModal, setShowModal] = useState(false);
   const [currentImageIndex, setCurrentImageIndex] = useState(0);
+  const [showMore, setShowMore] = useState(false);
 
   const list = [
     {
@@ -52,6 +53,10 @@ export default function Portfolio() {
     );
   };
 
+  const toggleShowMore = () => {
+    setShowMore((prevShowMore) => !prevShowMore);
+  };
+
   return (
     <div className="tudo">
       <div className="portfolio" id="portfolio">
@@ -70,8 +75,8 @@ export default function Portfolio() {
           </ul>
         </div>
         <div className="container">
-          {data.map((d, index) => (
-            <div className="item">
+          {data.slice(0, showMore ? data.length : 12).map((d, index) => (
+            <div className="item" key={index}>
               <img
                 src={d.img}
                 alt="imagem"
@@ -81,19 +86,15 @@ export default function Portfolio() {
             </div>
           ))}
         </div>
+        {/* Show "Ver Mais" or "Esconder" button */}
+        {data.length > 12 && (
+          <button className="ver-mais" onClick={toggleShowMore}>
+            {showMore ? "Esconder" : "Ver Mais"}
+          </button>
+        )}
         {showModal && (
           <div className="modal-slide">
-            <button className="close" onClick={closeModal}>
-              Close
-            </button>
-            <div className="modal-content">
-              <img src={data[currentImageIndex].img} alt="imagem" />
-              <h3>{data[currentImageIndex].title}</h3>
-            </div>
-            <div className="slider-controls">
-              <button onClick={prevSlide}><img src="./assets/arrow.png" alt="svg seta para direita" /></button>
-              <button onClick={nextSlide}><img src="./assets/arrow.png" alt="svg seta para direita" /></button>
-            </div>
+            {/* ... */}
           </div>
         )}
       </div>
